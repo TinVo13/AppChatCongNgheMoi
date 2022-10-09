@@ -7,14 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">#07DB89</color>
+    <color name="primary">#04AA6D</color>
     <color name="pink">#ffe8ed</color>
 
     <!--    design dark mode: night-->
     <color name="text_color">#eaeaea</color>
     <color name="text_color_btn">#eaeaea</color>
     <color name="text_color_hint">#B0B3B8</color>
-    <color name="primary_text_color">#29CE75</color>
+    <color name="primary_text_color">#04AA6D</color>
     <color name="subText_color">#B0B3B8</color>
     <color name="background_color">#323639</color>
     <color name="background_color_popup">#303135</color>

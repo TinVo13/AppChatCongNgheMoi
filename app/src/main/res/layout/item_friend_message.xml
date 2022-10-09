@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Trần Văn Nhân"
         android:textSize="18dp"
-        android:textColor="@color/text_color"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/card_avatar_friend"
         android:layout_marginLeft="10dp"
