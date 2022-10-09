@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:paddingBottom="55dp"
+    tools:context=".UserInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Tôi"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_color"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="42dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/userInfo_imgAvatar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_avatar"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:clipToOutline="true"
+                tools:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/userInfo_tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Tính năng"
+                android:textColor="@color/subText_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/userInfo_btnDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/dark_mode_icon"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Chế độ tối"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Thông tin"
+                android:textColor="@color/subText_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInfo_btnEditInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/edit_icon"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:stateListAnimator="@null"
+                android:text="Chỉnh sửa thông tin cá nhân"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="17dp"
+                android:enabled="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Tùy chọn"
+                android:textColor="@color/subText_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInfo_btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:stateListAnimator="@null"
+                android:text="Đổi mật khẩu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInfo_btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:stateListAnimator="@null"
+                android:text="Đăng xuất"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
