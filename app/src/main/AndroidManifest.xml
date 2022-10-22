@@ -26,6 +26,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MessageMobileApp">
         <activity
+            android:name=".VerifyEmail"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".InforActivity"
             android:exported="false" />
 

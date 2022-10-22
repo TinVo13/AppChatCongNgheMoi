@@ -52,7 +52,6 @@
                     android:paddingLeft="10dp"
                     android:paddingTop="4dp"
                     android:paddingBottom="6dp"
-                    android:text="test@gmail.com"
                     android:textColorHint="@color/text_color_hint"
                     android:textColorLink="@color/text_color_hint" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +105,7 @@
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 app:cornerRadius="50dp"
@@ -114,6 +113,17 @@
                 android:text="Đăng nhập"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-------Hoặc-------"
+                android:layout_gravity="center"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập với số điện thoại"
+                app:cornerRadius="50dp"
+                android:layout_marginHorizontal="10dp"/>
 
 
             <LinearLayout
@@ -127,10 +137,9 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="textEnd"
                     android:layout_weight="3"
                     android:text="Chưa có tài khoản?"
+                    android:textAlignment="textEnd"
                     android:textColorHint="@color/text_color_hint"
                     android:textSize="14sp" />
 
@@ -138,7 +147,6 @@
                     android:id="@+id/btn_to_register_page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:backgroundTint="@android:color/transparent"
                     android:stateListAnimator="@null"

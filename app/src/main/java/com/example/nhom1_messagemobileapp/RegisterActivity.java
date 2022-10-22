@@ -13,9 +13,12 @@ import android.widget.Toast;
 
 import com.example.nhom1_messagemobileapp.entity.User;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -51,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         edtName = findViewById(R.id.regis_edtUserHandleName);
         edtRegisterEmail = findViewById(R.id.regis_edtEmailInput);
-        edtLoginEmail = findViewById(R.id.login_edtEmailInput);
+        edtLoginEmail = findViewById(R.id.regis_edtEmailInput);
         edtPassword = findViewById(R.id.regis_edtPassInput);
         edtRePassword = findViewById(R.id.regis_edtConfirmPassInput);
 
@@ -102,7 +105,19 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            //send verify email
+                            FirebaseUser fuser = mAuth.getCurrentUser();
+                            fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(context, "Email not send "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            });
                             String uid = mAuth.getCurrentUser().getUid();
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             DatabaseReference myRef = database.getReference("user");
@@ -110,14 +125,11 @@ public class RegisterActivity extends AppCompatActivity {
                             user.setUid(uid);
                             myRef.child(uid).setValue(user);
 
-                            Toast.makeText(context, "Đăng ký tài khoản thành công", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Vui lòng xác thực địa chỉ Email để đăng nhập vào ứng dụng!", Toast.LENGTH_SHORT).show();
 
-                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                            startActivity(intent);
-
-
+                            finish();
                         } else {
-                            Toast.makeText(context, "Đăng ký tài khoản thất bại", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Đăng ký tài khoản thất bại do Email đã được sử dụng!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

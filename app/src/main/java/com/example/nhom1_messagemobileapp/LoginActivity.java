@@ -136,11 +136,16 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(context, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                startActivity(intent);
-                                finish();
-                                WelcomeActivity.fa.finish();
+                                if(auth.getCurrentUser().isEmailVerified()){
+                                    Toast.makeText(context, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
+                                    WelcomeActivity.fa.finish();
+                                }else{
+                                    Toast.makeText(context, "Vui lòng xác thực địa chỉ Email trước khi đăng nhập!", Toast.LENGTH_SHORT).show();
+                                }
+
                             } else {
                                 Toast.makeText(context, "Tài khoản hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                             }
