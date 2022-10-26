@@ -47,6 +47,7 @@
         <activity
             android:name=".UpdateUserInfoActivity"
             android:exported="false" />
+
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">

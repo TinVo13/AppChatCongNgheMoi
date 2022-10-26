@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.153515625" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_border.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_friend.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_message.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_message_input.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_my_message.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_popup_conner_16.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_primary_conner_16_top_left_top_right.xml" value="0.153515625" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_search_input.xml" value="0.153515625" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/drawable/bg_white_conner_16_border_gray.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_chat.xml" value="0.16" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_group_chat.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_infor.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_register.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_update_user_info.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_verify_email.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/activity_welcome.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/app_bar_layout.xml" value="0.13490437158469945" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_danh_ba.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_delete_message.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_groups.xml" value="0.13490437158469945" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/fragment_user_info.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/item_friend_message.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/item_message.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/item_sticker.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/item_user.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/layout_dialog_change_password.xml" value="0.18" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/layout_dialog_reset_pass.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/layout/tab_custom.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/AppChatCongNgheMoi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.14140625" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
